@@ -11,8 +11,22 @@ public class Part_2_1 : MonoBehaviour
     {
         int[] array = new int[10] { 22, 58, 7, 91, 23, 354, 1, 2, 40, 12 };
         List<int> list = new List<int>();
+        string output = "[";
 
-       
+        foreach (int number in array)
+        {
+            if (number < 30 && number % 2 == 0)
+            {
+                list.Add(number);
+                output += number;
+                output += ", ";
+            }
+        }
+
+        output = output.Substring(0, output.Length - 2);
+        output += "]";
+
+        print(output + " should be [22, 2, 12]");
     }
 
 }

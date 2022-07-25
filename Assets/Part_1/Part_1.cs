@@ -27,7 +27,9 @@ public class Part_1 : MonoBehaviour
         z /= 10;
         x += y + z;
 
-        // Answer: x = 
+        print("The answer to part 1 is " + x);
+
+        // Answer: x = 16
         //=====================================================
 
         //Part 2 (1pt) ==============================================
@@ -38,7 +40,9 @@ public class Part_1 : MonoBehaviour
         y = 48 / 4;
         isTrue = x == y;
 
-        // Answer: isTrue = 
+        print("The answer to part 2 is " + isTrue);
+
+        // Answer: isTrue = true
         //=====================================================
 
         //Part 3 (1pt) ==============================================
@@ -50,7 +54,9 @@ public class Part_1 : MonoBehaviour
             x += i;
         }
 
-        // Answer: x = 
+        print("The answer to part 3 is " + x);
+
+        // Answer: x = 45
         //=====================================================
 
         //Part 4 (1pt) ==============================================
@@ -79,19 +85,27 @@ public class Part_1 : MonoBehaviour
             x = 5;
         }
 
-        // Answer: x = 
+        print("The answer to part 4 is " + x);
+
+        // Answer: x = 3
         //=====================================================
 
         //Part 5 (1pt) ==============================================
         //Question: What is the restult of this for loop? 
 
         int[] a = new int[3] { 1, 3, 5 };
-        for (int i = 0; i < 10; i++)
+        try
         {
-            a[i] = i;
+            for (int i = 0; i < 10; i++)
+            {
+                a[i] = i;
+            }
+        }catch (System.Exception e)
+        {
+            print("The answer to part 5 is " + e);
         }
 
-        // Answer: 
+        // Answer: Index out of bounds error, loop attempts to access index 3 of the array, but index 3 does not exist
         //=====================================================
 
     }
