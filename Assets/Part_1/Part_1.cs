@@ -13,7 +13,7 @@ public class Part_1 : MonoBehaviour
 
         int b = 0;
 
-        // Answer: b = 0
+        // Answer: a was never declared
         //=====================================================
 
         //Part 1 (1pt) ==============================================
