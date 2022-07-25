@@ -16,7 +16,7 @@ public class Part_3_2 : MonoBehaviour
 
         //Using transform.Find or transform.Get get the Transform of Part_3_Cylinder which is a child of Part_3_Sphere
         //and use PrintOutNameAndPosition (1pt)
-        Transform cylinderTransform = sphereTransform.Find("Part_3_Cylinder").GetComponent<Transform>();
+        Transform cylinderTransform = sphereTransform.GetChild(0).GetComponent<Transform>();
         PrintOutNameAndPosition(cylinderTransform.name, cylinderTransform.position);
 
     }
