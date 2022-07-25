@@ -100,7 +100,8 @@ public class Part_1 : MonoBehaviour
             {
                 a[i] = i;
             }
-        }catch (System.Exception e)
+        }
+        catch (System.Exception e)
         {
             print("The answer to part 5 is " + e);
         }
